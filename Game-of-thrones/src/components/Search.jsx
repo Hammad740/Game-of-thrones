@@ -45,7 +45,7 @@ const Search = () => {
   return (
     <div>
       {isLoading ? (
-        <p>Loading...</p>
+        <p style={{ fontSize: '1.6rem', marginTop: '2rem' }}>Loading....</p>
       ) : (
         <div className="search">
           <div className="search-detail">
