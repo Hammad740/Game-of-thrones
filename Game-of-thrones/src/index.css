@@ -137,3 +137,35 @@ body {
 .text p {
   font-size: 0.95rem;
 }
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.88));
+  opacity: 0.9;
+  color: white;
+  object-fit: cover;
+}
+.search-detail {
+  height: 320px;
+  width: 320px;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-radius: 10px;
+}
+.search-detail img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.text {
+  padding: 10px;
+}
+.text p {
+  max-width: 400px;
+  font-size: 1.1rem;
+}

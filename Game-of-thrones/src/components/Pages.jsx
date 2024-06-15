@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
+import Search from './Search';
 import Data from './Data';
 
 const Pages = () => {
@@ -8,7 +9,7 @@ const Pages = () => {
       <Routes>
         <Route path="/" element={<Header />}></Route>
         <Route path="/characters" element={<Data />}></Route>
-        <Route path="/character/:search" element={<Search />}></Route>
+        <Route path="/characters/:search" element={<Search />}></Route>
       </Routes>
     </div>
   );

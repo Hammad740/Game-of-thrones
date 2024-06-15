@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Data = () => {
   const [characters, setCharacters] = useState([]);
@@ -42,15 +43,20 @@ const Data = () => {
         <div className="row">
           {characters.map((item) => (
             <div className="col-lg-4 col-md-6" key={item.id}>
-              <div className="projectCard">
-                <img src={item.imageUrl} alt={item.title} />
-                <div className="info">
-                  <div className="text">
-                    <h2>{item.title}</h2>
-                    <p className="name">{item.fullName}</p>
+              <NavLink
+                to={`/characters/${item.id}`}
+                style={{ color: 'white', textDecoration: 'none' }}
+              >
+                <div className="projectCard">
+                  <img src={item.imageUrl} alt={item.title} />
+                  <div className="info">
+                    <div className="text">
+                      <h2>{item.title}</h2>
+                      <p className="name">{item.fullName}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </NavLink>
             </div>
           ))}
         </div>
